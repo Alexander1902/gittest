@@ -11,6 +11,8 @@
     <properties>
         <scala.version>2.12.6</scala.version>
         <httpclient.version>4.5.1</httpclient.version>
+        <spark.version>2.3.0</spark.version>
+        <hadoop.version>2.9.1</hadoop.version>
     </properties>
 
     <dependencies>
@@ -73,6 +75,19 @@
             <artifactId>scala-actors</artifactId>
             <version>2.11.8</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>${hadoop.version}</version>
+        </dependency>
+
 
 
 

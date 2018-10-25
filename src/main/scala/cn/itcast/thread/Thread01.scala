@@ -6,7 +6,7 @@ package cn.itcast.thread
 object Thread01 {
 
   def main(args: Array[String]) {
-    val thread = new Thread(
+   val thread = new Thread(
       new Runnable {
       override def run(): Unit = {
         for(i <- 1 to 100) println(i)
@@ -28,4 +28,5 @@ object Thread01 {
 另外：
 setDaemon方法把java的线程设置为守护线程，此方法的调用必须在线程启动之前执行。只有在当前jvm中所有的线程都为守护线程时，jvm才会退出。
 如果创建的线程没有显示调用此方法，这默认为用户线程。
+
  */
