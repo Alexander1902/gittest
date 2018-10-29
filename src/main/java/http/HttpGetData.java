@@ -96,12 +96,5 @@ public class HttpGetData {
 		return javaObject;
 	}
     
-    public static void main(String args[]) throws ParseException, UnsupportedEncodingException, IOException{
-        //List<String> domain = getDomain("002", "0", "002");
-       // System.out.println(domain);
-    	Map<String, String> map = new HashMap<>();
-    	map.put("domain", "v.hebtv.com");
-    	String httpclientGet = httpClientGet("http://116.211.90.85:9995/api/v1/business/domain/", map);
-    	System.out.println(httpclientGet);
-    }
+
 }
