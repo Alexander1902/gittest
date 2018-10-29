@@ -6,7 +6,7 @@ package cn.itcast.thread
 object Thread01 {
 
   def main(args: Array[String]) {
-   val thread = new Thread(
+  val thread = new Thread(
       new Runnable {
       override def run(): Unit = {
         for(i <- 1 to 100) println(i)
