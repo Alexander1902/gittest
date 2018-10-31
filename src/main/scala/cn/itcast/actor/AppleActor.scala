@@ -45,7 +45,9 @@ object AppleActor {
     val reply = a !! SyncMsg(2, "hello actor")
     println(reply.isSet)
     //println("123")
+    println(reply)
     val c = reply.apply()
+
     println(reply.isSet)
     println(c)
   }

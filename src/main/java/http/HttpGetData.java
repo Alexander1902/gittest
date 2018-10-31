@@ -90,6 +90,7 @@ public class HttpGetData {
 		List<T> parseArray = JSON.parseArray(liststr, c);
 		return parseArray;
 	}
+
     public static <T> T aliJsonToObject(Class<T> c,String jsonstr){
 		JSONObject parse = JSON.parseObject(jsonstr);
 		T javaObject = JSONObject.toJavaObject(parse, c);

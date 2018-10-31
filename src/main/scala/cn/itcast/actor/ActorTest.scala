@@ -9,7 +9,7 @@ import scala.actors.Actor
 object MyActor1 extends Actor{
   //重新act方法
   def act(){
-    for(i <- 1 to 20){
+    for(i <- 1 to 3){
       println("actor-1 " + i)
       Thread.sleep(1000)
     }
@@ -19,7 +19,7 @@ object MyActor1 extends Actor{
 object MyActor2 extends Actor{
   //重新act方法
   def act(){
-    for(i <- 1 to 20){
+    for(i <- 1 to 3){
       println("actor-2 " + i)
       Thread.sleep(1000)
     }
