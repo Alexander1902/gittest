@@ -100,7 +100,7 @@ object Main{
     while(allReply.size>0){
       var isSet = allReply.filter(f1)
       for(it<-isSet){
-        val task: MyResultTask = it().asInstanceOf[MyResultTask]
+        val task: MyResultTask = it.apply().asInstanceOf[MyResultTask]
         resList+=task
         allReply-=it
       }

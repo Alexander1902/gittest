@@ -23,8 +23,8 @@ object RichFile {
   def main(args: Array[String]) {
     //val contents = new RichFile(new File("c://words.txt")).read()
     import Context._
-    val contents = new File("c://words.txt").read()
-    println(contents)
+    val str: String = new File("C:\\word1.txt").read()
+    println(str)
   }
 }
 
